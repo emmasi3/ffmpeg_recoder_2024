@@ -1,16 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132
+# Visual Studio Version 18
+VisualStudioVersion = 18.5.11723.231 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ffmpeg同步录屏(录音)_推流_直播", "ffmpeg同步录屏(录音)_推流_直播.vcxproj", "{B186F312-BC59-4A8E-9CA4-4F0A470C5A92}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "采集音频并实时编码", "..\采集音频并实时编码\采集音频并实时编码.vcxproj", "{D056A4E8-18E4-4E92-A9E0-D81199DF43A5}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B186F312-BC59-4A8E-9CA4-4F0A470C5A92} = {B186F312-BC59-4A8E-9CA4-4F0A470C5A92}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "采集音频并实时编码", "采集音频并实时编码\采集音频并实时编码.vcxproj", "{D056A4E8-18E4-4E92-A9E0-D81199DF43A5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "同步录音录屏并推流", "..\同步录音录屏并推流\同步录音录屏并推流.vcxproj", "{030DCDE1-0A7C-4F5D-84A8-ED8F4F3D673B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "同步录音录屏并推流", "同步录音录屏并推流\同步录音录屏并推流.vcxproj", "{030DCDE1-0A7C-4F5D-84A8-ED8F4F3D673B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +24,11 @@ Global
 		{B186F312-BC59-4A8E-9CA4-4F0A470C5A92}.Release|x86.ActiveCfg = Release|Win32
 		{B186F312-BC59-4A8E-9CA4-4F0A470C5A92}.Release|x86.Build.0 = Release|Win32
 		{D056A4E8-18E4-4E92-A9E0-D81199DF43A5}.Debug|x64.ActiveCfg = Debug|x64
+		{D056A4E8-18E4-4E92-A9E0-D81199DF43A5}.Debug|x64.Build.0 = Debug|x64
 		{D056A4E8-18E4-4E92-A9E0-D81199DF43A5}.Debug|x86.ActiveCfg = Debug|Win32
 		{D056A4E8-18E4-4E92-A9E0-D81199DF43A5}.Debug|x86.Build.0 = Debug|Win32
-		{D056A4E8-18E4-4E92-A9E0-D81199DF43A5}.Release|x64.ActiveCfg = Debug|x64
-		{D056A4E8-18E4-4E92-A9E0-D81199DF43A5}.Release|x64.Build.0 = Debug|x64
+		{D056A4E8-18E4-4E92-A9E0-D81199DF43A5}.Release|x64.ActiveCfg = Release|x64
+		{D056A4E8-18E4-4E92-A9E0-D81199DF43A5}.Release|x64.Build.0 = Release|x64
 		{D056A4E8-18E4-4E92-A9E0-D81199DF43A5}.Release|x86.ActiveCfg = Release|Win32
 		{D056A4E8-18E4-4E92-A9E0-D81199DF43A5}.Release|x86.Build.0 = Release|Win32
 		{030DCDE1-0A7C-4F5D-84A8-ED8F4F3D673B}.Debug|x64.ActiveCfg = Debug|x64
