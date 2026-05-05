@@ -1384,7 +1384,9 @@ int AVRecordImpl::OpenOutput()
 		this->m_vEncodeCtx->qcompress = 0.6;	//0.5
 
 		this->m_vEncodeCtx->codec_tag = 0; // 由封装器自动填充
-		this->m_vEncodeCtx->flags |= AV_CODEC_FLAG_GLOBAL_HEADER;
+		// 不添加该标志，rtmp传输会报错 “codec: invalid video codec header size=5”。该报错信息在 Nginx-rtmp 服务器终端显示，是由 AI 帮我查出来的
+		// 嗯嗯，具体发病原因去看 recording 项目
+		this->m_vEncodeCtx->flags |= AV_CODEC_FLAG_GLOBAL_HEADER; 
 
 		av_opt_set(this->m_vEncodeCtx->priv_data, "preset", "p1", 0);
 
